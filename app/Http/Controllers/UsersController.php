@@ -109,7 +109,7 @@ class UsersController extends Controller
     	return view('users.login-register');
     }
 
-    public function forgotPassword(Request $request){
+    /*public function forgotPassword(Request $request){
         if($request->isMethod('post')){
            $data =  $request->all();
            //echo "<pre>"; print_r($data); die;
@@ -120,7 +120,7 @@ class UsersController extends Controller
 
         }
         return view('users.forgot-password');
-    }
+    }*/
 
     public function confirmAccount($email){
         $email = base64_decode($email); 
